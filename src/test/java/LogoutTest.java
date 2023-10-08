@@ -11,32 +11,6 @@ import org.testng.annotations.*;
 
 import java.time.Duration;
 
-/*1. Navigate to the Home page
-2. Click  the Login button
-3. Validate that the URL is HomeURL = BaseURL + "/posts/all";
-4.Login with valid credentials of a registered user
-5. Validate that the Profile button is dislpayed
-6. Click on the Logout button ($$('.fa-sign-out-alt'))
-7. Validate the URL is correct - BaseURL
-8.Validate that the Sign in form is Displayed
-
- 1. Open homepage
-    2. Click login button
-    3. Verify that the URL is correct
-    4. Verify that the login form has appeared
-    5. Populate username field with 'auto_user'
-    6. Populate password filed with 'auto_pass'
-    7. Click Sing in button
-    8. Verify that the URL is correct ( homepage )
-    9. Verify that there is a Profile button visible
-    10. Click the Profile button
-    11. Verify that the URL contains /user
-    12. Username title matches the text 'auto_user'
-    13. Verify that the Sign out button is displayed
-
-4. Click
- */
-
 public class LogoutTest {
 
     WebDriver driver;
