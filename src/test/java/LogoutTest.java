@@ -16,8 +16,6 @@ public class LogoutTest {
     WebDriver driver;
     WebDriverWait wait;
     WebElement logOutBtn;
-    String username;
-    String password;
     final String BaseURL = "http://training.skillo-bg.com:4200";
     final String HomeURL = BaseURL + "/posts/all";
     final String ProfileURL = BaseURL + "/users/";
