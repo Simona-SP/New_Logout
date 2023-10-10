@@ -74,7 +74,7 @@ public class LogoutTest {
     }
 
     @Test(dataProvider = "getUserData")
-    public void Logout(String username, String password) {
+    public void logOutHomePage(String username, String password) {
 
         System.out.println("Logout from the Homepage");
         Login("SimonaSLS", "Monika987321*");
@@ -83,6 +83,10 @@ public class LogoutTest {
 
         System.out.println("Validate that the Login form has appeared and logOut button is not displayed");
         successfulLogout();
+    }
+
+    @Test(dataProvider = "getUserData")
+    public void logOutProfilePage(String username, String password) {
 
         System.out.println("Login and navigate to the Profile page");
         Login("SimonaSLS", "Monika987321*");
@@ -99,7 +103,11 @@ public class LogoutTest {
         logOutBtn = driver.findElement(By.cssSelector("i.fa-sign-out-alt"));
         clickElement(logOutBtn);
         successfulLogout();
+    }
 
+    @Test(dataProvider = "getUserData")
+
+    public void logOutNewPostPage(String username, String password) {
         System.out.println("Login and navigate to the New Post page");
         Login("SimonaSLS", "Monika987321*");
         WebElement newPost = driver.findElement(By.id("nav-link-new-post"));
